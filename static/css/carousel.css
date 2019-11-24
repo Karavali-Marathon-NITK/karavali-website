@@ -5,8 +5,8 @@
 body {
   padding-top: 3rem;
   color: #2c3e50;
-  visibility:hidden;
 }
+
 
 
 
@@ -14,12 +14,12 @@ body {
 -------------------------------------------------- */
 
 #myCarousel{
-	height:800px;
+	height:750px;
 }
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
-  height: 800px;
+  margin-bottom: 0rem;
+  height: 750px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -29,12 +29,12 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 800px;
+  height: 750px;
   
 }
 
 .carousel .item {
-  height: 800px;
+  height: 750px;
 }
 
 .item img {
@@ -42,7 +42,31 @@ body {
     object-fit:cover;
     top: 0;
     left: 0;
-    min-height: 800px;
+    min-height: 750px;
+}
+
+.item1 {
+    background: url('/static/images/1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.item2 {
+    background: url('/static/images/2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.item3 {
+    background: url('/static/images/3.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -85,52 +109,85 @@ body {
 	width:100%;
 }
 
-.loader {
-	visibility:visible;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-  	
-	margin: auto;
-}
 
-.loader ul{
-    width:  70%;
-	height:100%;
-   margin:0 auto;
+/*Register Here */
+
+.registration{
+	background-color:#2d3436;
 }
 
 
-.container {
-  color: #333;
-}
 
-
-.loader li {
-  display: inline-block;
-  font-size: 1.5em;
-  padding-right: 2em;
-  list-style-type: none;
-  text-transform: uppercase;
-  margin:0 auto;
-  
-  
-}
-
-.loader li span {
- vertical-align: middle;
-  display: block;
-  font-size: 4.5rem;
+.flat-button {
+	font-size:25px;
+  margin: 0 auto;
+  margin-top: 25px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: color .3s;
+  /* Typo */
+  line-height: 60px;
   text-align: center;
+  color: #fff;
 }
 
 
+
+.flat-button:hover::after {
+  transform: translateY(-80%);
+  transition: transform .3s;
+}
+
+
+/*Loader CSS */
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+ #countdown span {
+    font-size: 35px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  #countdown span{
+    font-size: 16px;
+  }
+}
+
+#countdown {
+  width: 100%;
+  height:100%;
+
+}
+
+
+label {
+  clear: both;
+  display: block;
+}
+
+
+#countdown span {
+  background: #313233;
+  color: #FFF;
+  font-weight: normal;
+  text-align: center;
+  width: 18%;
+  display: block;
+  float: left;
+  border-right: 1px solid #FFF;
+  margin-right:4%;
+}
+#countdown span:last-child {
+  border-right: 1px solid #313233;
+  margin-right: 1%;
+}
+
+#countdown span:first-child{
+	margin-left: 9%;
+}
 
 
 
@@ -139,9 +196,7 @@ body {
   background-color: #2f3640;
   margin-bottom:-10px;
   height:80px;
-  
-  
-  
+
 }
 
 #contact-bar a {
@@ -201,39 +256,6 @@ body {
 
 
 /*Team CSS */
-
-
-/* Custom Arrow */
-.prev{
-	color: #999;
-	position: absolute;
-	top: 38%;
-	left: -2em;
-	font-size: 1.5em;
-		:hover{
-			cursor: pointer;
-			color: black;
-		}
-}
-.next{
-	color: #999;
-	position: absolute;
-	top: 38%;
-	right: -2em;
-	font-size: 1.5em;
-	:hover{
-			cursor: pointer;
-			color: black;
-		}
-}
-
-@media screen and (max-width: 800px) {
-    .next {
-        display: none !important;
-    }
-}
-
-
 
 
 
