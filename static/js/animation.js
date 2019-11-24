@@ -19,21 +19,21 @@ $(window).scroll(function() {
 	
 	$(ele1).css({
 		
-		opacity: 1 - ele1y/600 +0.4
+		opacity: 1 - ele1y/300 +0.4
 		
 	});
 	
 	
 	$(ele2).css({
 		
-		opacity: 1 - ele2y/600 +0.4
+		opacity: 1 - ele2y/300 +0.4
 		
 	});
 	
 	
 	$(ele3).css({
 		
-		opacity: 1 - ele3y/600 +0.5
+		opacity: 1 - ele3y/300 +0.5
 		
 	});
 	
