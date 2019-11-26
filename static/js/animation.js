@@ -19,21 +19,21 @@ $(window).scroll(function() {
 	
 	$(ele1).css({
 		
-		opacity: 1 - ele1y/300 +0.4
+		opacity: 1 - ele1y/500 + 0.7
 		
 	});
 	
 	
 	$(ele2).css({
 		
-		opacity: 1 - ele2y/300 +0.4
+		opacity: 1 - ele2y/500 +0.7
 		
 	});
 	
 	
 	$(ele3).css({
 		
-		opacity: 1 - ele3y/300 +0.5
+		opacity: 1 - ele3y/500 +0.7
 		
 	});
 	
@@ -83,10 +83,10 @@ function tick() {
 	
 	
 	
-	$('#days').text(days);
-	$('#hours').text(((hours < 10) ? '0' : '') + hours);
-	$('#minutes').text(((mins < 10) ? '0' : '') + mins );
-	$('#seconds').text(((secs < 10) ? '0' : '') + secs );
+	$('#days').text(days + ' D');
+	$('#hours').text(((hours < 10) ? '0' : '') + hours + ' H');
+	$('#minutes').text(((mins < 10) ? '0' : '') + mins +' M');
+	$('#seconds').text(((secs < 10) ? '0' : '') + secs + ' S' );
 }
 
 function animate_top (){

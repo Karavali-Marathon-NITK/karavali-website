@@ -3,7 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
+  padding-top: 1rem;
   color: #2c3e50;
 }
 
@@ -35,41 +35,41 @@ body {
 }
 
 @media screen and (min-height: 400px) {
-#myCarousel{height:200px;}
+#myCarousel{height:250px;}
 
-.carousel {height: 200px;}
+.carousel {height: 250px;}
 
-.carousel-item {height: 200px;}
+.carousel-item {height: 250px;}
 
-.carousel .item {height: 200px;}
+.carousel .item {height: 250px;}
 
-.carousel img{height:200px;}
+.carousel img{height:250px;}
 
 }
 
 @media screen and (min-height: 600px) {
-#myCarousel{height:350px;}
+#myCarousel{height:400px;}
 
-.carousel {height: 350px;}
+.carousel {height: 400px;}
 
-.carousel-item {height: 350px;}
+.carousel-item {height: 400px;}
 
-.carousel .item {height: 350px;}
+.carousel .item {height: 400px;}
 
-.carousel img{height:350px;}
+.carousel img{height:400px;}
 
 }
 
 @media screen and (min-height: 800px) {
-#myCarousel{height:500px;}
+#myCarousel{height:550px;}
 
-.carousel {height: 500px;}
+.carousel {height: 550px;}
 
-.carousel-item {height: 500px;}
+.carousel-item {height: 550px;}
 
-.carousel .item {height: 500px;}
+.carousel .item {height: 550px;}
 
-.carousel img{height:500px;}
+.carousel img{height:550px;}
 
 }
 
@@ -85,6 +85,19 @@ body {
 .carousel .item {height: 900px;}
 
 .carousel img{height:900px;}
+
+}
+
+@media screen and (min-width: 1200px) {
+#myCarousel{height:1100px;}
+
+.carousel {height: 1100px;}
+
+.carousel-item {height: 1100px;}
+
+.carousel .item {height: 1100px;}
+
+.carousel img{height:1100px;}
 
 }
 
@@ -114,7 +127,7 @@ body {
 
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 8rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -128,67 +141,38 @@ body {
 	width:100%;
 }
 
-
-/*Register Here */
-
-.registration{
-	background-color:#2d3436;
+/* Register CSS */
+.register{
+	float:right;
+	text-align:center;
+	width:40%;
+	height:100%;
 }
 
-
-
-.flat-button {
-	font-size:25px;
-  margin: 0 auto;
-  margin-top: 25px;
-  overflow: hidden;
-  z-index: 1;
-  cursor: pointer;
-  transition: color .3s;
-  /* Typo */
-  line-height: 60px;
-  text-align: center;
-  color: #fff;
-}
-
-
-
-.flat-button:hover::after {
-  transform: translateY(-80%);
-  transition: transform .3s;
-}
 
 
 /*Countdown CSS */
 
 .countdown {
   text-align: center;
-  margin-top:1rem;
+  margin-top:2rem;
 }
 
 .countdown-row{
-	margin-left:20%;
-	margin-right:20%;
+	 float:left;
+  width:50%;
 }
 
-.countdown h2 {
-  font-size: 1rem;
-  font-weight:800;
-  text-transform: uppercase;
-  color: black;
-  text-shadow: 0 0 4rem #0c222b;
-}
 
 .countdown-unit {
   position: relative;
   overflow: hidden;
   display: inline-block;
-  z-index: 2;
+  z-index: -1;
   border-radius: 0.5rem;
-  box-sizing: border-box;
-  margin: 0.25rem;
+  margin: 0.2rem;
   text-shadow: 0 0 2rem #fff3e7;
-  box-shadow: 0 0 2rem 0 rgba(12, 34, 43, 0.25), 0 2rem 3rem -2rem rgba(12, 34, 43, 0.5);
+  box-shadow: 0 0 2rem 0 rgba(12, 34, 43, 0.1), 0 2rem 3rem -2rem rgba(12, 34, 43, 0.2);
 }
 
 
@@ -219,6 +203,10 @@ body {
 .countdown-unit div {
   text-align: center;
   font-weight: 800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .countdown div:first-child{
@@ -229,19 +217,16 @@ body {
 	margin-right: 1px;
 }
 
-
-
-
 @media screen and (min-height: 400px) {
 	
 	.countdown-unit{height:2.8rem;}
-	.countdown-unit{font-size:1.5rem;}
+	.countdown-unit{font-size:1rem;}
 }
 
 @media screen and (min-height: 600px) {
 	
 	.countdown-unit{height:3.5rem;}
-	.countdown-unit{font-size:2rem;}
+	.countdown-unit{font-size:1.5rem;}
 
 }
 
@@ -255,20 +240,15 @@ body {
 @media screen and (min-height: 1000px) {
 	
 	.countdown-unit{height:6rem;}
-	.countdown-unit{font-size:4.5rem;}
+	.countdown-unit{font-size:2.5rem;}
 
 }
-@media screen and (min-height: 1200px) {
+@media screen and (min-width: 1200px) {
 	
-	.countdown-unit{height:6rem;}
-	.countdown-unit{font-size:5rem;}
+	.countdown-unit{height:7rem;}
+	.countdown-unit{font-size:3rem;}
 
 }
-
-
-
-
-
 
 
 
