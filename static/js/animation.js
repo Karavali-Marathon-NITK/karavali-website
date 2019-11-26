@@ -94,6 +94,8 @@ function animate_top (){
 		$('#back-to-top').tooltip('show');
 }
 
+
+
 $('.flip').click(function(){
 	        $(this).find('.card').toggleClass('flipped');
 });

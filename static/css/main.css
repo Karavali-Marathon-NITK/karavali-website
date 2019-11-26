@@ -2,16 +2,21 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   padding-top: 1rem;
   color: #2c3e50;
+
 }
 
 .back-to-top {
   cursor: pointer;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5px;
+  right: 5px;
   display:none;
   color: white;
 
@@ -127,7 +132,7 @@ body {
 
 
 .featurette-divider {
-  margin: 8rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 6rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -314,10 +319,83 @@ body {
   -o-transition-duration: 0.5s;
 }
 
+.footer {
+	margin-top: 50px;
+}
+
 
 
 
 /*Team CSS */
+
+#multi_item_carousel .carousel-item img{
+		border-radius: 2%;
+}
+
+
+@media screen and (min-height: 400px) {
+
+	#multi_item_carousel{
+		height: 150px;	
+	}
+
+	.team{
+		height: 150px;
+	}
+
+	#multi_item_carousel .carousel-item{
+		height: 150px;
+		overflow: hidden;
+	} 
+	#multi_item_carousel .carousel-item img{
+		height: 150px;
+	}
+
+}
+
+
+@media screen and (min-height: 600px) {
+
+	#multi_item_carousel{
+		height: 200px;	
+	}
+
+	.team{
+		height: 200px;
+	}
+
+	#multi_item_carousel .carousel-item{
+		height: 200px;
+		overflow: hidden;
+	} 
+	#multi_item_carousel .carousel-item img{
+		height: 200px;
+	}
+
+}
+
+
+@media screen and (min-height: 900px) {
+
+	#multi_item_carousel{
+		height: 300px;	
+	}
+
+	.team{
+		height: 300px;
+	}
+
+	#multi_item_carousel .carousel-item{
+		height: 300px;
+		overflow: hidden;
+	} 
+	#multi_item_carousel .carousel-item img{
+		height: 300px;
+		
+	}
+
+}
+
 
 
 
@@ -344,6 +422,8 @@ body {
   }
 }
 
+
+
 /* FLIP CARDS */
 
 .flip {
@@ -366,8 +446,8 @@ body {
     background-color: #fff;
   	margin: auto;
 	margin-bottom: 50px;
-	width: 300px;
-	height: 400px;
+	height: 200px;
+
 }
 
 .flip .card .face {
@@ -379,7 +459,7 @@ body {
 .flip .card .front {
    position: absolute;
    z-index: 1;
-   height: 300px;
+   height: 100%;
    width: auto;
 }
 
@@ -388,14 +468,31 @@ body {
   -webkit-transform: rotatey(-180deg);
           transform: rotatey(-180deg);
   position: absolute;
-  height: 300px;
+  height: 100%;
   width: auto;
 }
 
 .inner{
+	height:100%;
   margin:0px !important;
 }
 
-.footer {
-	margin-top: 50px;
+.inner svg{
+	height:100%;
 }
+
+@media screen and (min-height: 400px) {
+	.flip .card {height: 200px;}
+}
+
+
+@media screen and (min-height: 600px) {
+	.flip .card { height: 250px;}
+}
+
+@media screen and (min-height: 900px) {
+	.flip .card { height: 400px;}
+}
+
+
+
