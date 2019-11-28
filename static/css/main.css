@@ -94,15 +94,15 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-#myCarousel{height:1100px;}
+#myCarousel{height:900px;}
 
-.carousel {height: 1100px;}
+.carousel {height: 900px;}
 
-.carousel-item {height: 1100px;}
+.carousel-item {height: 900px;}
 
-.carousel .item {height: 1100px;}
+.carousel .item {height: 900px;}
 
-.carousel img{height:1100px;}
+.carousel img{height:900px;}
 
 }
 
@@ -150,8 +150,35 @@ body {
 .register{
 	float:right;
 	text-align:center;
-	width:40%;
+	width:35%;
+}
+
+.register button{
 	height:100%;
+	min-width: 100%;
+	margin-right:10px;
+}
+
+@media screen and (min-height: 400px) {
+	.register{ height:50px;}
+
+}
+
+@media screen and (min-height: 600px) {
+	
+	.register{ height:65px;}
+}
+
+@media screen and (min-height: 800px) {
+	
+	.register{ height:75px;}
+	.register button{font-size:18px;}
+}
+
+@media screen and (min-height: 1000px) {
+	
+	.register{ height:90px;}
+	.register button{font-size:25px;}
 }
 
 
@@ -161,11 +188,12 @@ body {
 .countdown {
   text-align: center;
   margin-top:2rem;
+  
 }
 
 .countdown-row{
 	 float:left;
-  width:50%;
+     width:60%;
 }
 
 
@@ -175,9 +203,11 @@ body {
   display: inline-block;
   z-index: -1;
   border-radius: 0.5rem;
-  margin: 0.2rem;
+  margin: 0.1rem;
   text-shadow: 0 0 2rem #fff3e7;
   box-shadow: 0 0 2rem 0 rgba(12, 34, 43, 0.1), 0 2rem 3rem -2rem rgba(12, 34, 43, 0.2);
+  padding:0;
+  
 }
 
 
@@ -206,6 +236,7 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 .countdown-unit div {
+  min-width:100%;  	
   text-align: center;
   font-weight: 800;
   position: absolute;
@@ -353,27 +384,45 @@ body {
 
 }
 
-
-@media screen and (min-height: 600px) {
+@media screen and (min-height: 400px) {
 
 	#multi_item_carousel{
-		height: 200px;	
+		height: 100px;	
 	}
 
 	.team{
-		height: 200px;
+		height: 100px;
 	}
 
 	#multi_item_carousel .carousel-item{
-		height: 200px;
+		height: 100px;
 		overflow: hidden;
 	} 
 	#multi_item_carousel .carousel-item img{
-		height: 200px;
+		height: 100px;
 	}
 
 }
 
+@media screen and (min-height: 600px) {
+
+	#multi_item_carousel{
+		height: 150px;	
+	}
+
+	.team{
+		height: 150px;
+	}
+
+	#multi_item_carousel .carousel-item{
+		height: 150px;
+		overflow: hidden;
+	} 
+	#multi_item_carousel .carousel-item img{
+		height: 150px;
+	}
+
+}
 
 @media screen and (min-height: 900px) {
 
@@ -431,6 +480,7 @@ body {
           perspective: 800;
         position: relative;
         text-align: center;
+		
 }
 
 .flip .card.flipped {
@@ -460,6 +510,7 @@ body {
    position: absolute;
    z-index: 1;
    height: 100%;
+   min-width:100%;
    width: auto;
 }
 
@@ -469,6 +520,7 @@ body {
           transform: rotatey(-180deg);
   position: absolute;
   height: 100%;
+  min-width:100%;
   width: auto;
 }
 
@@ -482,17 +534,68 @@ body {
 }
 
 @media screen and (min-height: 400px) {
-	.flip .card {height: 200px;}
+	.flip .card {height: 400px;}
 }
 
 
 @media screen and (min-height: 600px) {
-	.flip .card { height: 250px;}
+	.flip .card { height: 550px;}
 }
 
 @media screen and (min-height: 900px) {
-	.flip .card { height: 400px;}
+	.flip .card { height: 700px;}
 }
+
+
+/* Gallery */
+
+.gallery-top-text li a {
+  border: 1px solid #797979;
+  padding: 8px 15px;
+  border-radius: 50px;
+  color: #797979;
+  display: inline-block;
+  margin: 3px 0;
+}
+.filter-button.active {
+  background: #797979;
+  color: #fff;
+}
+.filter {
+  border: 1px solid #fff;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+.filter:hover .overlay {
+  opacity: 0.8;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.no-gutters img{
+	min-width:100%;
+	margin-bottom:5px;
+}
+
 
 
 

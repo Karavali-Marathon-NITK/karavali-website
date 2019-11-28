@@ -24,6 +24,8 @@ $(window).scroll(function() {
 	$(ele3).css({
 		opacity: 1 - ele3y/500 +0.7
 	});
+	
+	
 });
 
 
@@ -71,7 +73,7 @@ function tick() {
 	$('#days').text(days + ' D');
 	$('#hours').text(((hours < 10) ? '0' : '') + hours + ' H');
 	$('#minutes').text(((mins < 10) ? '0' : '') + mins +' M');
-	$('#seconds').text(((secs < 10) ? '0' : '') + secs + ' S' );
+	
 }
 
 function animate_top (){
@@ -94,13 +96,34 @@ function animate_top (){
 		$('#back-to-top').tooltip('show');
 }
 
+function gallery(){
+	
+	$(".filter-button").click(function() {
+    var value = $(this).attr("data-filter");
+    if (value == "all") {
+      $(".filter").show();
+    } else {
+      $(".filter")
+        .not("." + value)
+        .hide();
+      $(".filter")
+        .filter("." + value)
+        .show();
+    }
+    if ($(".filter-button").removeClass("active")) {
+      $(this).addClass("active");
+    }
+  });
+  
+  $(this).addClass("active");
+}
 
-
-$('.flip').click(function(){
+$('.flip').hover(function(){
 	        $(this).find('.card').toggleClass('flipped');
 });
 
 $(document).ready(function() {
 	tick();
-    animate_top();
-})
+	gallery();
+	animate_top();
+});
