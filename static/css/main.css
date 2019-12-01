@@ -1,7 +1,7 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
 html, body {
   overflow-x: hidden;
 }
@@ -9,9 +9,7 @@ html, body {
 body {
   padding-top: 1rem;
   color: #2c3e50;
- 
 }
-
 
 .back-to-top {
   cursor: pointer;
@@ -21,6 +19,12 @@ body {
   display:none;
   color: white;
 
+}
+
+.logo img{
+	width:60px;
+	height:60px;
+	
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -293,6 +297,48 @@ body {
 
 /* Content */
 
+.read{
+min-width:100%;
+text-align:center;
+margin-top:2rem;
+}
+.read a {
+  text-decoration:none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.read a:hover {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.style-1 {
+  border:3px solid #000;
+  color:#000;
+  font:12px Montserrat;
+  text-transform:uppercase;  
+  padding:10px;
+  font-weight:600;
+  max-width:250px;
+  display:block;
+  text-align:center;  
+  margin:10px auto;
+  position:relative;
+}
+
+.style-1:hover {
+  background:#000;
+  border-color:#000;
+  color:#fff;
+}
+
+
 
 
 
@@ -368,7 +414,7 @@ body {
 /*Team CSS */
 
 #multi_item_carousel .carousel-item img{
-		border-radius: 2%;
+		border-radius: 50%;
 		width: 100px;
 		padding-right: 5%;
         padding-left: 5%;
@@ -458,6 +504,192 @@ body {
 
 }
 
+/*   Rules and FAQ CSS*/
+.tabbed-content{
+  overflow:hidden;
+  color:black;
+  border-radius:4px;
+}
+
+.tabs label{
+	min-width:48%;
+
+}
+
+.tabs label div{
+  float:left;
+  min-width:100%;
+  text-align:center;
+  padding: 8px;
+  cursor:pointer;
+  opacity:0.7;
+  transition:0.3s;
+  border-bottom:2px solid transparent;
+}
+
+.tabs label div:hover{
+  opacity:1;
+}
+
+.tabs label input:checked + div{
+  opacity:1;
+  border-bottom:2px solid #fff;
+}
+
+.tabs input{
+  display:none;
+}
+
+.tabs{
+  overflow:hidden;
+  padding:0 8px;
+}
+
+.tabContent{
+  padding:0 16px;
+  display:none;
+  animation:fadeEffect .5s;
+}
+
+.tabContent:target{
+  display:block;
+}
+
+@keyframes fadeEffect{
+  0%{opacity:0}
+  100%{opacity:1}
+}
+
+
+
+.tabs ol {
+  counter-reset: list;
+  list-style: none;
+  padding:0;
+}
+
+.tabs ol li {
+  counter-increment: list;
+  margin-bottom: 10px;
+}
+
+.tabs ol li::before {
+  content: counter(list);
+  background: #53bf89;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 50%;
+  width: 2.2em;
+  height: 2.2em;
+  line-height: 2.3em;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+
+
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#FAQ h3 {
+  font-size: 1.75rem;
+  color: #373d51;
+  padding: 1.3rem;
+  margin: 0;
+}
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.accordion a:hover::after {
+  border: 1px solid #03b5d2;
+}
+
+.accordion a.active {
+  color: #03b5d2;
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion a::after {
+  font-family: 'FontAwesome';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+
+
+
 
 
 
@@ -480,7 +712,7 @@ body {
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 4rem;
   }
 }
 
