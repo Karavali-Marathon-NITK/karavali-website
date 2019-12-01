@@ -9,8 +9,9 @@ html, body {
 body {
   padding-top: 1rem;
   color: #2c3e50;
-
+ 
 }
+
 
 .back-to-top {
   cursor: pointer;
@@ -132,7 +133,7 @@ body {
 
 
 .featurette-divider {
-  margin: 6rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 1.5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -188,7 +189,8 @@ body {
 .countdown {
   text-align: center;
   margin-top:2rem;
-  
+  min-height: 100%;
+
 }
 
 .countdown-row{
@@ -207,6 +209,7 @@ body {
   text-shadow: 0 0 2rem #fff3e7;
   box-shadow: 0 0 2rem 0 rgba(12, 34, 43, 0.1), 0 2rem 3rem -2rem rgba(12, 34, 43, 0.2);
   padding:0;
+
   
 }
 
@@ -255,36 +258,41 @@ body {
 
 @media screen and (min-height: 400px) {
 	
+	.countdown{height:2.8rem;}
 	.countdown-unit{height:2.8rem;}
 	.countdown-unit{font-size:1rem;}
 }
 
 @media screen and (min-height: 600px) {
-	
+	.countdown{height:3.5rem;}
 	.countdown-unit{height:3.5rem;}
 	.countdown-unit{font-size:1.5rem;}
 
 }
 
 @media screen and (min-height: 800px) {
-	
+	.countdown{height:4.5rem;}
 	.countdown-unit{height:4.5rem;}
 	.countdown-unit{font-size:2rem;}
 
 }
 
 @media screen and (min-height: 1000px) {
-	
+	.countdown{height:6rem;}
 	.countdown-unit{height:6rem;}
 	.countdown-unit{font-size:2.5rem;}
 
 }
 @media screen and (min-width: 1200px) {
-	
+	.countdown{height:7rem;}
 	.countdown-unit{height:7rem;}
 	.countdown-unit{font-size:3rem;}
 
 }
+
+
+/* Content */
+
 
 
 
@@ -361,25 +369,28 @@ body {
 
 #multi_item_carousel .carousel-item img{
 		border-radius: 2%;
+		width: 100px;
+		padding-right: 5%;
+        padding-left: 5%;
 }
 
 
 @media screen and (min-height: 400px) {
 
 	#multi_item_carousel{
-		height: 150px;	
+		height: 50px;	
 	}
 
 	.team{
-		height: 150px;
+		height: 50px;
 	}
 
 	#multi_item_carousel .carousel-item{
-		height: 150px;
+		height: 50px;
 		overflow: hidden;
 	} 
 	#multi_item_carousel .carousel-item img{
-		height: 150px;
+		height: 50px;
 	}
 
 }
@@ -407,6 +418,26 @@ body {
 @media screen and (min-height: 600px) {
 
 	#multi_item_carousel{
+		height: 120px;	
+	}
+
+	.team{
+		height: 120px;
+	}
+
+	#multi_item_carousel .carousel-item{
+		height: 120px;
+		overflow: hidden;
+	} 
+	#multi_item_carousel .carousel-item img{
+		height: 120px;
+	}
+
+}
+
+@media screen and (min-height: 900px) {
+
+	#multi_item_carousel{
 		height: 150px;	
 	}
 
@@ -420,26 +451,8 @@ body {
 	} 
 	#multi_item_carousel .carousel-item img{
 		height: 150px;
-	}
-
-}
-
-@media screen and (min-height: 900px) {
-
-	#multi_item_carousel{
-		height: 300px;	
-	}
-
-	.team{
-		height: 300px;
-	}
-
-	#multi_item_carousel .carousel-item{
-		height: 300px;
-		overflow: hidden;
-	} 
-	#multi_item_carousel .carousel-item img{
-		height: 300px;
+		padding-left:15%;
+		padding-right: 15%;
 		
 	}
 
