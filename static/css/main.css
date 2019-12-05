@@ -11,6 +11,10 @@ body {
   color: #2c3e50;
 }
 
+main {
+	padding-top: 2rem;
+}
+
 .back-to-top {
   cursor: pointer;
   position: fixed;
