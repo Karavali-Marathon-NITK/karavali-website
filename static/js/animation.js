@@ -173,5 +173,7 @@ $(document).ready(function() {
 	tick();
 	gallery();
 	animate_top();
+
+
 	
 });
