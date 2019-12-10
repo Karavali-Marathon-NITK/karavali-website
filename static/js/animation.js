@@ -140,34 +140,11 @@ jQuery(document).ready(function($){
 
 //open popup
 function openpopup(id) {
-    event.preventDefault();
+    
     	$("#"+id+"").addClass('is-visible');
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
