@@ -1233,6 +1233,19 @@ figure.snip1157 .author h5 span {
 }
 
 
+@media screen and (min-height: 500px) {
+	figure.snip1157 {max-width: 400px;}
+}
+
+@media screen and (min-height: 700px) {
+	figure.snip1157 {max-width: 400px;}
+}
+
+@media screen and (min-width: 1000px) {
+	figure.snip1157 {max-width: 400px;}
+}
+
+
 
 /* Demo purposes only */
 
