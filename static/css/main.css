@@ -487,9 +487,8 @@ margin-top:2rem;
 .team .card{
 	color: white;
 	border: none;
-	max-width: 210px;
-    margin:auto;
-    
+    margin: auto;
+	height: 300px;
 }
 
 .card-body{
@@ -1261,11 +1260,16 @@ figure.snip1157 .author h5 span {
 
 .card .card-img {
   height: auto;
-  width: 100%;
+  width: 90%;
   background-color: #4426a8;
   position: relative;
   background-size: cover;
   background-position: center top;
+}
+
+.card .card-img-top {
+  height: auto;
+  border: 10px;
 }
 
 .card:hover {
