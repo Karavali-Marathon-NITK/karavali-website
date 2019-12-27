@@ -330,7 +330,6 @@ h1 {
 
 }
 
-
 /* Content */
 
 .lead{
@@ -942,74 +941,23 @@ margin-top:2rem;
 
 /* FLIP CARDS */
 
-.cat{
-	background-color: #130f40;
-
-}
-
-.flip {
-  -webkit-perspective: 800;   
-          perspective: 800;
-        position: relative;
-        text-align: center;
-		
-}
-
-.flip .card.flipped {
-  -webkit-transform: rotatey(-180deg);
-          transform: rotatey(-180deg);
-}
-
-.flip .card {
-    -webkit-transform-style: preserve-3d;
-    -webkit-transition: 0.8s;
-    transform-style: preserve-3d;
-    transition: 0.8s;
-    background-color: #fff;
-  	margin: auto;
-	margin-bottom: 50px;
-	height: auto;
-	max-width: 400px;
-}
-
-.flip .card .face {
-  -webkit-backface-visibility: hidden ;
-    backface-visibility: hidden ;
-   z-index: 2;
-}
-
-.flip .card .front {
-   position: absolute;
-   z-index: 1;
-   height: auto;
-   min-width:100%;
-   width: auto;
-}
-
-.flip .card .back {
-  padding-top: 10%;
-  -webkit-transform: rotatey(-180deg);
-          transform: rotatey(-180deg);
-  position: absolute;
-  background-color: #fff;
-  height: auto;
-  min-width:100%;
-  width: auto;
-}
-
-.inner{
-	height:100%;
-  margin:0px !important;
+.route-card {
+	width: 90%;
+	border: 0px;
+	height: 40vh;
 }
 
 .btn-route {
 	margin: 0;
   	position: absolute;
-    top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);g
+	border: 0px;
+	background-color: #fff;
 }
+
+@media screen and (min-width: 600px){
+		.route-card {height: 65vh;}
+}
+
 
 
 /* Gallery */
@@ -1439,8 +1387,8 @@ figure.snip1157 .author h5 span {
 /* MAPS */
 
 .modal-maps {
-	height: 100% auto;
-	width: 100% auto;
+	height: 90vh;
+	width:  90vw;
 }
 
 
