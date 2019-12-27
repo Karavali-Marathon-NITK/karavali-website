@@ -476,7 +476,9 @@ margin-top:2rem;
 
 .team img{
 	padding:0;
-    min-height: 60px; 
+    height: auto;
+	width: 90%;
+	position: relative;
 }
 
 .team .body{
