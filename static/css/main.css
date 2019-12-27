@@ -968,9 +968,8 @@ margin-top:2rem;
     background-color: #fff;
   	margin: auto;
 	margin-bottom: 50px;
-	height: 200px;
+	height: auto;
 	max-width: 400px;
-
 }
 
 .flip .card .face {
@@ -982,7 +981,7 @@ margin-top:2rem;
 .flip .card .front {
    position: absolute;
    z-index: 1;
-   height: 100%;
+   height: auto;
    min-width:100%;
    width: auto;
 }
@@ -992,7 +991,8 @@ margin-top:2rem;
   -webkit-transform: rotatey(-180deg);
           transform: rotatey(-180deg);
   position: absolute;
-  height: 100%;
+  background-color: #fff;
+  height: auto;
   min-width:100%;
   width: auto;
 }
@@ -1002,27 +1002,13 @@ margin-top:2rem;
   margin:0px !important;
 }
 
-.inner svg{
-	height:100%;
-	min-width: 100%;
-	
-}
-
-.inner svg image{
-	min-height: 100%;
-}	
-
-@media screen and (min-height: 400px) {
-	.flip .card {height: 400px;}
-}
-
-
-@media screen and (min-height: 600px) {
-	.flip .card { height: 550px;}
-}
-
-@media screen and (min-height: 900px) {
-	.flip .card { height: 700px;}
+.btn-route {
+	margin: 0;
+  	position: absolute;
+    top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);g
 }
 
 
