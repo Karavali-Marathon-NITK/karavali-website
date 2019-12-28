@@ -9,7 +9,8 @@
     <!-- Bootstrap core CSS -->
 <link href="/static/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="static/images/logo.png" type="image/png">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -132,7 +133,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette" id="fade1">
+    <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">About <span class="text-muted"></span></h2>
 			<p class="lead">NITK Karavali Marathon is an annual marathon organised by the students of NITK Surathkal and 
@@ -144,7 +145,7 @@
 			sees itself as the flag bearers of the Fit India Movement in the region and among the younger 
 			generation of the community. </p>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5" data-aos="fade-up-left">
          <img width="100%" height="auto" src="static/images/about.jpg">
       </div>
 	   
@@ -155,22 +156,22 @@
   <h2 class="featurette-heading"> Race Categories </h1>
 	<div class="row">
 		<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-        	<div class="card route-card">
+        	<div class="card route-card" data-aos="fade-up-right">
 				<button type="image" class="btn-route" data-toggle="modal" data-target="#exampleModalCenter"><img src="static/images/42.jpg" height="100%" width="100%"/></button>
           	</div>
 		</div>
 	
   		<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-        	<div class="card route-card"> 
+        	<div class="card route-card" data-aos="fade-down"> 
 				<button type="image" class="btn-route" data-toggle="modal" data-target="#exampleModalCenter"><img src="static/images/21.jpg" height="100%" width="100%" /></button>
             </div>
         </div>
 		<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-			<div class="card route-card">
+			<div class="card route-card" data-aos="fade-up-left">
 				<button type="image" class="btn-route" data-toggle="modal" data-target="#exampleModalCenter"><img src="static/images/10.jpg" height="100%" width="100%"/></button>
             </div>
         </div>
-		<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+		<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-down-right">
         	<div class="card route-card"> 
 				<button type="image" class="btn-route" data-toggle="modal" data-target="#exampleModalCenter"><img src="static/images/5.jpg" height="100%" width="100%"/></button>
             </div> 
@@ -181,14 +182,14 @@
  <hr class="featurette-divider">
 
 <div class = "container-fluid information">
-    <div class="row featurette" id="fade2">
+    <div class="row featurette">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">Theme <span class="text-muted"></span></h2>
         <p class="lead">NITK Karavali Marathon strives to improve year upon year, but have chosen to use the brand value to promote novel causes in our society. Being one of India’s only student-organised full marathons, the 2020 edition is themed with the verve to raise awareness about one of the biggest issues endangering the future of the younger generations: Combat Climate Change. 
 Join us in helping to promote the importance of living a fit and healthy lifestyle, and the importance of co-existing with our ecosystem and protect the younger generations as well as Mother Earth from devastating effects of climate change.
 </p>
       </div>
-      <div class="col-md-5 order-md-1">
+      <div class="col-md-5 order-md-1" data-aos="fade-up-right">
         <img width="80%" height="80%" src="static/images/theme.jpg">
       </div>
 	  
@@ -558,6 +559,8 @@ Join us in helping to promote the importance of living a fit and healthy lifesty
 </div>
 
 </main>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script> AOS.init(); </script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 	<script>window.jQuery || document.write('<script src="/static/js/vendor/jquery.min.js"><\/script>')</script>
 	<script src="/static/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

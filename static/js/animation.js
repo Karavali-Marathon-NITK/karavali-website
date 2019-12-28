@@ -1,35 +1,3 @@
-var ele1 = document.getElementById("fade1");
-var ele2 = document.getElementById("fade2");
-
-
-$(window).scroll(function() {
-	var screenPosition1 = ele1.getBoundingClientRect();
-	var ele1y = screenPosition1.y
-	
-	var screenPosition2 = ele2.getBoundingClientRect();
-	var ele2y = screenPosition2.y
-
-
-	
-
-
-	ele1y = Math.abs(ele1y);
-	ele2y = Math.abs(ele2y);
-	
-
-	$(ele1).css({
-		opacity: 1 - ele1y/500 + 0.7
-	});
-	$(ele2).css({
-		opacity: 1 - ele2y/500 +0.5
-	});
-	
-
-	
-	
-});
-
-
 var day;
 var sec;
 var ticker;
