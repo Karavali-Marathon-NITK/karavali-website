@@ -39,9 +39,9 @@ function tick() {
 
 
 
-	$('#days').text(days + ' D');
-	$('#hours').text(((hours < 10) ? '0' : '') + hours + ' H');
-	$('#minutes').text(((mins < 10) ? '0' : '') + mins +' M');
+	$('#days').text(days + ' days');
+	$('#hours').text(((hours < 10) ? '0' : '') + hours + ' hrs');
+	$('#minutes').text(((mins < 10) ? '0' : '') + mins +' mins');
 	
 }
 
