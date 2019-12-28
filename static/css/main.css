@@ -839,6 +839,11 @@ margin-top:2rem;
   margin: 0;
 }
 
+.rules-list li {
+	font-size: 1.15rem;
+	font-weight: 400;
+}
+
 .accordion a {
   position: relative;
   display: -webkit-box;
@@ -875,7 +880,7 @@ margin-top:2rem;
 
 .accordion a::after {
   font-family: 'FontAwesome';
-  content: '\f218';
+  content: '\f107';
   position: absolute;
   float: right;
   right: 1rem;
@@ -892,8 +897,8 @@ margin-top:2rem;
 }
 
 .accordion a.active::after {
-  font-family: 'Ionicons';
-  content: '\f209';
+  font-family: 'FontAwesome';
+  content: '\f106';
   color: #03b5d2;
   border: 1px solid #03b5d2;
 }
