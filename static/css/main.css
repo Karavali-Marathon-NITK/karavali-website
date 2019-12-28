@@ -124,15 +124,15 @@ h1 {
 }
 
 @media screen and (min-width: 1200px) {
-#myCarousel{height:800px;}
+#myCarousel{height:95vh;}
 
-.carousel {height: 800px;}
+.carousel {height:95vh;}
 
-.carousel-item {height: 800px;}
+.carousel-item {height: 95vh;}
 
-.carousel .item {height: 800px;}
+.carousel .item {height: 95vh;}
 
-.carousel img{height:800px;}
+.carousel img{height: 95vh;}
 
 }
 
@@ -338,6 +338,7 @@ h1 {
 	border: 0px;
 	font-size: 20px;
 	font-weight: 800;
+	border-radius: 10px;
 }
 
 .ts-button:hover,
@@ -500,7 +501,7 @@ margin-top:2rem;
 }
 
 .team .card{
-	color: white;
+	background: rgba(0,0,0,0);
 	border: none;
 	max-width: 210px;
     margin:auto;
@@ -828,8 +829,15 @@ margin-top:2rem;
 
 
 .container {
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
+  padding: 0;
+}
+
+.container-fluid {
+	margin: 0;
+	width: 100%;
+	padding: 0;
 }
 
 #FAQ h3 {
@@ -838,10 +846,17 @@ margin-top:2rem;
   padding: 1.3rem;
   margin: 0;
 }
+#rules-faq-tabs {
+	background-color: #f8f5ed;
+}
 
+#rules-faq-tabs .nav-link.active {
+	background-color: #f8f5ed;
+}
 .rules-list li {
 	font-size: 1.15rem;
 	font-weight: 400;
+	background-color: #f8f5ed;
 }
 
 .accordion a {
@@ -965,13 +980,20 @@ margin-top:2rem;
 	width: 90%;
 	border: 0px;
 	height: 40vh;
+	background: rgba(76, 175, 80, 0);
 }
 
 .btn-route {
 	margin: 0;
   	position: absolute;
 	border: 0px;
-	background-color: #fff;
+	background-color: rgba(0,0,0,0);
+}
+
+.route-img {
+	border-radius: 25px;
+	height: 100%;
+	width: 100%;
 }
 
 @media screen and (min-width: 600px){
