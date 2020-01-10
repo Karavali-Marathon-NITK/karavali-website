@@ -42,15 +42,40 @@ function tick() {
 	$('#days').text(days + ' days');
 	$('#hours').text(((hours < 10) ? '0' : '') + hours + ' hrs');
 	$('#minutes').text(((mins < 10) ? '0' : '') + mins +' mins');
-	
 }
 
 
+$(document).ready(function(){
+			$('.news-slider').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 8000,
+				arrows: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 1
+					}
+				}]
+			});
+		});
 
 
 $('.flip').hover(function(){
 	        $(this).find('.card').toggleClass('flipped');
 });
+
+
 
 function openTab(tab){
   window.location.hash=tab.innerText.trim();
