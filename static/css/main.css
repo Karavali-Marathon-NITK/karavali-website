@@ -1142,7 +1142,7 @@ margin-top:2rem;
 .route-card {
 	width: 90%;
 	border: 0px;
-	height: 40vh;
+	height: 45vh;
 	background: rgba(76, 175, 80, 0);
 }
 
@@ -1160,7 +1160,7 @@ margin-top:2rem;
 }
 
 @media screen and (min-width: 600px){
-		.route-card {height: 65vh;}
+		.route-card {height: 70vh;}
 }
 
 
