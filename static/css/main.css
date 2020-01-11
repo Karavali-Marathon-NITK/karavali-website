@@ -4,6 +4,9 @@
 /* Padding below the footer and lighter body text */
 
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+
+
 html {
   overflow-x: hidden !important;
 }
@@ -1009,17 +1012,13 @@ margin-top:2rem;
   padding: 1.3rem;
   margin: 0;
 }
-#rules-faq-tabs {
-	background-color: #f8f5ed;
-}
 
-#rules-faq-tabs .nav-link.active {
-	background-color: #f8f5ed;
-}
+
+
 .rules-list li {
 	font-size: 1.15rem;
 	font-weight: 400;
-	background-color: #f8f5ed;
+
 }
 
 .accordion a {
@@ -1454,9 +1453,9 @@ figure.snip1157 .author h5 span {
   display: block;
   width: 120px;
   height: 2px;
-  background: rgba(0, 0, 0, 0.1);
+
   border-radius: 50%;
-  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1);
+  
   margin: 220px auto;
 }
 
@@ -1532,7 +1531,7 @@ figure.snip1157 .author h5 span {
 
 .media .card .card-img {
   height: auto;
-  width: 90%;
+  width: 100%;
   background-color: #4426a8;
   position: relative;
   background-size: cover;
@@ -1617,17 +1616,17 @@ figure.snip1157 .author h5 span {
   margin: 0;
 }
 .counter .item i{
-  color: rgba(25, 25, 25, 0.9);
+  color:#662d91;
   font-size: 2.5em;
   text-shadow: 1px 1px 1px #ccc;
 }
 .counter .item p.number{
-  color: rgba(21, 21, 21, 1.0);
+  color: #662d91;
   font-size: 1.5em;
   text-shadow: 1px 1px 1px #ccc;
 }
 .counter .item p.label{
-  color: rgba(25, 25, 25, 0.9);
+  color: #7c7b7b;
   font-size: 1.1em;
   text-shadow: 1px 1px 1px #ccc;
   text-transform: lowercase;
