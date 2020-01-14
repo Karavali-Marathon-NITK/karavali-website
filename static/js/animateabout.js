@@ -1,33 +1,30 @@
-
-
 $.fn.jQuerySimpleCounter = function( options ) {
-	var settings = $.extend({
-		start:  0,
-		end:    100,
-		easing: 'swing',
-		duration: 400,
-		complete: ''
-	}, options );
+  var settings = $.extend({
+    start:  0,
+    end:    100,
+    easing: 'swing',
+    complete: ''
+  }, options );
 
-	var thisElement = $(this);
+  var thisElement = $(this);
 
-	$({count: settings.start}).animate({count: settings.end}, {
-		duration: settings.duration,
-		easing: settings.easing,
-		step: function() {
-			var mathCount = Math.ceil(this.count);
-			thisElement.text(mathCount);
-		},
-		complete: settings.complete
-	});
+  $({count: settings.start}).animate({count: settings.end}, {
+    duration: settings.duration,
+    easing: settings.easing,
+    step: function() {
+      var mathCount = Math.ceil(this.count);
+      thisElement.text(mathCount);
+    },
+    complete: settings.complete
+  });
 };
 
-
-$('#number1').jQuerySimpleCounter({end: 1961,duration: 3000});
-$('#number2').jQuerySimpleCounter({end: 1685,duration: 3000});
-$('#number3').jQuerySimpleCounter({end: 359400, duration: 2000});
-$('#number4').jQuerySimpleCounter({end: 246,duration: 2500});
-
+$('#number1').jQuerySimpleCounter({end: 200,duration: 3000});
+//$('#number2').jQuerySimpleCounter({end: 300000,duration: 3700});
+$('#number3').jQuerySimpleCounter({end: 40000,duration: 3100});
+$('#number4').jQuerySimpleCounter({end: 3000,duration: 3450});
+//$('#number5').jQuerySimpleCounter({end: 472,duration: 3300});
+//$('#number6').jQuerySimpleCounter({end: 224,duration: 2175});
 
 
 function sliceSize(dataNum, dataTotal) {
