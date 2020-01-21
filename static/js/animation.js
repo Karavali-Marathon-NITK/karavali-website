@@ -119,6 +119,6 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 
 $(document).ready(function() {
-	tick();
+	//tick();
 	
 });
